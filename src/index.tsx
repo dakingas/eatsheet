@@ -1,12 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react"
+import ReactDOM from "react-dom"
+import "./index.css"
+import App from "./App"
+import * as serviceWorker from "./serviceWorker"
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const element = document.getElementById("root")
+ReactDOM.render(<App />, element)
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register({
+  onSuccess(serviceWorkerRegistration) {
+    // TODO: Warn about service worker installation and offline use
+  },
+  onUpdate(serviceWorkerRegistration) {
+    // TODO: Warn about new content received
+  }
+})
+
+// Hot reload enabled
+declare var module: {
+  hot: {
+    accept(path?: string, callback?: () => void): void
+  }
+}
+if (module.hot) {
+  module.hot.accept("./App", () => {
+    const NextApp = require("./App").default
+    ReactDOM.render(<NextApp />, element)
+  })
+}
