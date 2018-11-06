@@ -39,8 +39,5 @@
     "hooks": {
       "pre-commit": "pretty-quick"
     }
-  },
-  "prettier": {
-    "semi": false
   }
 }
