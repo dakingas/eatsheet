@@ -4,6 +4,8 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
+  pointer-events: none;
+  user-select: none;
   height: 40vmin;
 }
 
@@ -18,8 +20,13 @@
   color: white;
 }
 
-.App-link {
+.App-NavLink {
   color: #61dafb;
+}
+
+.App-NavLink-selected {
+  color: #fff;
+  font-weight: bold;
 }
 
 @keyframes App-logo-spin {
