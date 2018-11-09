@@ -1,3 +1,5 @@
+# EatSheet [![Build Status](https://travis-ci.org/dakingas/eatsheet.svg?branch=master)](https://travis-ci.org/dakingas/eatsheet)
+
 ## Available Scripts
 
 In the project directory, you can run:
