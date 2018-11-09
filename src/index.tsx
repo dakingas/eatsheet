@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import App from "./components/app";
 import * as serviceWorker from "./serviceWorker";
 
 const element = document.getElementById("root");
@@ -24,8 +24,8 @@ declare var module: {
   };
 };
 if (module.hot) {
-  module.hot.accept("./App", () => {
-    const NextApp = require("./App").default;
+  module.hot.accept("./components/app", () => {
+    const NextApp = require("./components/app").default;
     ReactDOM.render(<NextApp />, element);
   });
 }
