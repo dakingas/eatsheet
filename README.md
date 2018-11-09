@@ -1,7 +1,5 @@
 # EatSheet [![Build Status](https://travis-ci.org/dakingas/eatsheet.svg?branch=master)](https://travis-ci.org/dakingas/eatsheet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,18 +27,17 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run analyze`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Analyze the `build` folder to show information about the size distribution of the production bundle.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### `npm run styleguide`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Runs a component's catalog app in the development mode.<br>
+Open [http://localhost:6060](http://localhost:6060) to view it in the browser.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The page will reload if you make edits into the `components` folder.
 
-## Learn More
+#### `npm run styleguide:build`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Builds the component's catalog app for production to the `styleguide` folder.
