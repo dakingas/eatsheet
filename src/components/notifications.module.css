@@ -1,0 +1,48 @@
+.notification {
+  background-color: white;
+  color: black;
+  border-radius: 10px 10px 0 0;
+  min-width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.colorNormal {
+  background-color: lightgreen;
+}
+
+.colorWarning {
+  background-color: lightyellow;
+}
+
+.colorDanger {
+  background-color: lightcoral;
+}
+
+.colorInformative {
+  background-color: lightblue;
+}
+
+.notificationButton {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
